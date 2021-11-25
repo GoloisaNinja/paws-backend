@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "name": "Reviews"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "media_id": {
+      "required": true,
+      "type": "biginteger"
+    },
+    "media_type": {
+      "type": "string",
+      "required": true
+    },
+    "preview_text": {
+      "type": "richtext",
+      "required": true
+    },
+    "reviewed_on": {
+      "type": "date",
+      "required": true
+    },
+    "impressions": {
+      "type": "json",
+      "required": true
+    }
+  }
+}
